@@ -1,0 +1,35 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.highlighted {
+  background-color: #ffe066;
+  font-weight: bold;
+}
+
+li button {
+  margin-left: 0.5rem;
+  background-color: #f44336;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
