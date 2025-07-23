@@ -32,4 +32,11 @@ li {
 .button-group {
   display: flex;
   gap: 0.5rem;
+  justify-content: center; 
+  align-items: center;
+}
+.button-group button {
+  min-width: 100px;  
+  text-align: center;
+  white-space: nowrap;
 }

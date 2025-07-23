@@ -1,5 +1,6 @@
 import React from 'react'
 import './Playlist.css'
+import AnimatePlaying from './AnimatePlaying'
 function Playlist({
     playlist,
     currentIndex,
@@ -14,10 +15,13 @@ function Playlist({
                     style={{ background: index === currentIndex ? 'yellow' : 'transparent' }}
                 >
                     {song}
-                    <div className="button-group">
+                    {index === currentIndex?(<div className="button-group">
+                        <button onClick={() => deleteSong(index)}>Delete</button>
+                        <button onClick={() => jumpto(index)}><AnimatePlaying/></button>
+                    </div>):(<div className="button-group">
                         <button onClick={() => deleteSong(index)}>Delete</button>
                         <button onClick={() => jumpto(index)}>Play</button>
-                    </div>
+                    </div>)}
                 </li>))
                 }
             </ul>
